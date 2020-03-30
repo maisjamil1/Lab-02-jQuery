@@ -9,18 +9,23 @@ $(document).ready(function() {
 
   }
   Dog.prototype.render = function() {
-    let $animalClone = $("#animals-template").clone();
-    $animalClone.find("h2").text(this.keyword);
+    let $animalClone = $("#photo-template").clone();
+    $animalClone.find("h2").text(this.title);
     $animalClone.find("img").attr("src", this.image_url);
     $animalClone.find("p").text(this.description);
-    // $dogClone.removeClass("dog-template");
     $animalClone.removeAttr("id");
     $animalClone.attr("id", this.keyword);
-    $("main section:first").append($animalClone);
+    $("main").append($animalClone);
+
+    //// Dog.prototype.renderoption = function() {
+    //   let $animaselect = $("select").clone();
+    //   $animalClone.find("h3").text(this.keyword);
+    //   $("option").append($animaselect);
+    //// };
   };
 
   const readJson = () => {
-    $.ajax("page-1.json", { method: "GET", dataType: "JSON" }).then(data => {
+    $.ajax("data/page-1.json", { method: "GET", dataType: "JSON" }).then(data => {
       data.forEach(animal => {
         let animalObj = new Animals(animal);
         animalObj.render();
@@ -29,5 +34,7 @@ $(document).ready(function() {
   };
   readJson();
 });
+
+
 
 

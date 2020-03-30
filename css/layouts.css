@@ -1,0 +1,20 @@
+/* #photo-template {
+  display: none;
+} */
+
+img {
+  height: 200px;
+}
+/* section {
+  float: left;
+  margin: 40px;
+}
+
+ul {
+  visibility: hidden;
+}
+ul.on {
+  background-color: darkcyan;
+  color: #eee;
+  visibility: visible;
+} */
