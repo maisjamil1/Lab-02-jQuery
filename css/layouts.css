@@ -1,20 +1,33 @@
-/* #photo-template {
-  display: none;
-} */
 
-img {
-  height: 200px;
+*{
+  box-sizing: border-box;
 }
-/* section {
+header{
+ margin-top: 0px;
+  height: 400px;
+  position: relative;
+}
+
+main{
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* #UniWhal{
+  display: block;
   float: left;
-  margin: 40px;
-}
-
-ul {
-  visibility: hidden;
-}
-ul.on {
-  background-color: darkcyan;
-  color: #eee;
-  visibility: visible;
+  margin: 40px auto;
+  width: 200px;
 } */
+
+/* #Rhino{
+  display: block;
+  float: left;
+  margin: 40px auto;
+  width: 200px;
+} */
+select{
+  display: block;
+  margin: 40px auto;
+  height: 50px;
+}
