@@ -2,9 +2,7 @@
 *{
   box-sizing: border-box;
 }
-#photo-template{
-  display: hidden;
-}
+
 header{
  margin-top: 0px;
   height: 400px;
@@ -32,15 +30,9 @@ section {
   overflow: hidden;
 } 
 
-img {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
-  border-radius: 20px; 
-}
+
 
 footer{
-  width: 100%;
   clear: both;
   text-align: center;
   padding: 20px;
